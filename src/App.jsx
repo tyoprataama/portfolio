@@ -1,6 +1,7 @@
 import './css/App.css'
 import Hero from './elements/Hero.jsx'
 import Nav from './elements/Nav.jsx'
+import Project from './elements/Project.jsx'
 
 function App() {
 
@@ -8,7 +9,7 @@ function App() {
     <>
       <Nav/>
       <Hero/>
-      
+      <Project />
     </>
   )
 }

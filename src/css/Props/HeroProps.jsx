@@ -19,7 +19,7 @@ export default function HeroProps() {
     </p>
 
     <span>
-  <p p className = "relative font-semibold text-sm md:text-base lg:text-[17px] before:absolute before:inset-0 before:-skew-y-3 before:bg-[#FE7743]/40 before:rounded-md before:-z-10 px-2" >
+  <p className = "relative font-semibold text-sm md:text-base lg:text-[17px] before:absolute before:inset-0 before:-skew-y-3 before:bg-[#FE7743]/40 before:rounded-md before:-z-10 px-2" >
     <span className="inline md:hidden">👆</span>
     <span className="hidden md:inline">👈</span>
     {" "}Recently shifted to a more general career path btw 😉
