@@ -16,7 +16,7 @@ export default function Hero() {
     waveSpeed={0.03}
       className = "absolute inset-0 z-0"
 />
-      <div div className = "absolute inset-0 flex items-center  justify-start z-10" >
+      <div div className = "absolute inset-0 flex items-center  justify-start z-10 txt-color" >
         <HeroProps />
       </div>
     </div>
