@@ -5,10 +5,8 @@ import profileImg from "@/assets/me.png";
 export default function Project() {
   return (
     <section className="w-full bg-linear-to-b from-[#d8d3c9] to-[#181C14] flex flex-col justify-start items-start py-10 md:py-32 md:px-9 px-6">
-      {/* ubah flex agar responsif */}
       <div className="flex flex-col md:flex-row justify-between w-full items-center md:items-start gap-10">
         
-        {/* Tulisan */}
         <div className="max-w-5xl text-[#3C3D37]">
           <h2 className="text-2xl md:text-5xl font-extrabold inline-block relative">
             🚀{" "}
@@ -31,7 +29,6 @@ export default function Project() {
           </div>
         </div>
 
-        {/* Gambar */}
         <div className="w-full md:w-1/2 flex justify-center md:justify-end">
           <img
             src={profileImg}
