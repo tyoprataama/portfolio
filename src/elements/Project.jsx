@@ -4,10 +4,10 @@ import profileImg from "@/assets/me.png";
 
 export default function Project() {
   return (
-    <section className="w-full bg-linear-to-b from-[#d8d3c9] to-[#181C14] flex flex-col justify-start items-start py-10 md:py-32 md:px-9 px-6">
+    <section className="w-full bg-linear-to-b from-black to-[#181C14] flex flex-col justify-start items-start py-10 md:py-32 md:px-9 px-6">
       <div className="flex flex-col md:flex-row justify-between w-full items-center md:items-start gap-10">
         
-        <div className="max-w-5xl text-[#3C3D37]">
+        <div className="max-w-5xl txt-color">
           <h2 className="text-2xl md:text-5xl font-extrabold inline-block relative">
             🚀{" "}
             <span className="relative inline-block px-3">
