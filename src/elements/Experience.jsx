@@ -6,7 +6,7 @@ export default function Experience() {
   return (
     <section className="relative w-full min-h-screen">
       {/* Bagian Pertama */}
-      <div className="w-full bg-linear-to-b from-[#181C14] to-[#003358] grid justify-center items-start py-10 md:py-20 px-4 sm:px-6">
+      <div className="w-full bg-linear-to-b from-[#181C14] to-[#002744] grid justify-center items-start py-10 md:py-20 px-4 sm:px-6">
         <div className="max-w-5xl text-center mb-8 md:mb-12">
           <h2 className="text-2xl md:text-5xl font-extrabold text-white inline-block relative">
             💼{" "}
@@ -36,19 +36,31 @@ export default function Experience() {
                 title: "Power BI Data Analyst",
                 date: "Apr – May 2024",
                 description:
-                  "Mengembangkan antarmuka pengguna menggunakan React dan Tailwind CSS, serta berkolaborasi dengan tim backend untuk integrasi API.",
+                  [
+                    "Developed data models and visual reports to support strategic planning initiatives",
+                    "Utilized data analytics to optimize business operations and resource management",
+                    "Adapted quickly to new tools, enhancing efficiency in fast-paced environments"
+                  ]
               },
               {
                 title: "Data Engineer",
                 date: "May – June 2022",
                 description:
-                  "Mendesain dan membangun komponen UI reusable dengan prinsip clean code dan aksesibilitas tinggi.",
+                  [
+                    "Managed data projects critical to business forecasting and planning.",
+                    "Ensured data accuracy and reliability for informed decision-making processes.",
+                    "Applied advanced data handling techniques to support large-scale operations."
+                  ]
               },
               {
                 title: "Backend Engineer",
                 date: "Mar – May 2022",
                 description:
-                  "Mendesain dan membangun komponen UI reusable dengan prinsip clean code dan aksesibilitas tinggi.",
+                  [
+                    "Designed and optimized systems to improve data flow and operational efficiency.",
+                    "Integrated cloud-based solutions (AWS) for scalable planning tools.",
+                    "Enhanced system reliability and performance through process optimization."
+                  ]
               },
             ]}
           />
@@ -56,7 +68,7 @@ export default function Experience() {
       </div>
 
       {/* Bagian Kedua */}
-      <div className = "w-full bg-linear-to-b from-[#003358] to-[#0f3543] grid justify-center items-start py-10 md:py-20 px-4 sm:px-6" >
+      <div className = "w-full bg-linear-to-b from-[#002744] to-[#0f3543] grid justify-center items-start py-5 px-4 sm:px-6" >
         <div className="w-full flex justify-center">
           <ExperienceProps
             company="SoftwareSeni"
@@ -68,7 +80,11 @@ export default function Experience() {
                 title: "React Developer Intern",
                 date: "Aug – Oct 2022",
                 description:
-                  "Menganalisis data operasional energi hijau dan membuat laporan performa dalam bentuk dashboard Power BI.",
+                  [
+                    "Developed user friendly resource management systems to optimize company operations.",
+                    "Collaborated cross functionally to align project goals with organizational planning objectives.",
+                    "Collaborated with the team projects using SCRUM methodologies to ensure timely project completion."
+                  ]
               },
               
             ]}
