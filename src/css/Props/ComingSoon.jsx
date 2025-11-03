@@ -1,4 +1,5 @@
-import React from "react";
+/* eslint-disable no-unused-vars */
+import { motion } from "framer-motion";
 
 export default function ComingSoonCard({
   title = "New Project",
@@ -7,7 +8,11 @@ export default function ComingSoonCard({
 }) {
   return (
     <div className="w-full max-w-sm mx-auto">
-      <div
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
         className="
           p-6 rounded-2xl
           backdrop-blur-md
@@ -22,13 +27,27 @@ export default function ComingSoonCard({
       >
         <div className="flex items-start justify-between gap-4">
           <div>
-            <h4 className="text-lg md:text-xl font-semibold text-[#E9F7EF]">
+            <motion.h4
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 0.6 }}
+              viewport={{ once: true }}
+              className="text-lg md:text-xl font-semibold text-[#E9F7EF]"
+            >
               {title}
-            </h4>
-            <p className="mt-1 text-sm text-[#E9F7EF]/90">{subtitle}</p>
+            </motion.h4>
+
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4, duration: 0.6 }}
+              viewport={{ once: true }}
+              className="mt-1 text-sm text-[#E9F7EF]/90"
+            >
+              {subtitle}
+            </motion.p>
           </div>
 
-          {/* Badge kecil */}
           <div className="flex-shrink-0">
             <div className="px-3 py-1 rounded-full text-xs font-semibold text-white bg-[#B9E3C6]/40 shadow-sm">
               Soon
@@ -36,7 +55,15 @@ export default function ComingSoonCard({
           </div>
         </div>
 
-        <p className="py-4 text-sm text-[#E9F7EF]/90 leading-relaxed">{note}</p>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.7 }}
+          viewport={{ once: true }}
+          className="py-4 text-sm text-[#E9F7EF]/90 leading-relaxed"
+        >
+          {note}
+        </motion.p>
 
         <div className="mt-6 flex items-center gap-3">
           <div className="flex-1">
@@ -45,7 +72,7 @@ export default function ComingSoonCard({
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

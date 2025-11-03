@@ -1,5 +1,7 @@
+/* eslint-disable no-unused-vars */
 import { ButtonWithIcon } from "@/css/Props/Button";
 import { IconGitBranch } from "@tabler/icons-react";
+import { motion } from "framer-motion";
 import profileImg from "@/assets/me.png";
 
 export default function Project() {
@@ -8,17 +10,29 @@ export default function Project() {
       <div className="flex flex-col md:flex-row justify-between w-full items-center md:items-start gap-10">
         
         <div className="max-w-5xl txt-color">
-          <h2 className="text-2xl md:text-5xl font-extrabold inline-block relative">
+          <motion.h2
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="text-2xl md:text-5xl font-extrabold inline-block relative"
+          >
             🚀{" "}
             <span className="relative inline-block px-3">
               <span className="relative z-10">Highlighted Projects</span>
               <span className="absolute inset-0 -skew-y-3 bg-[#FE7743]/40 rounded-md z-0"></span>
             </span>
-          </h2>
+          </motion.h2>
 
-          <p className="mt-6 text-sm md:text-2xl max-w-2xl mx-auto py-2 md:py-6">
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="mt-6 text-sm md:text-2xl max-w-2xl mx-auto py-2 md:py-6"
+          >
             I've worked on variety projects, ranging from small to full-scale applications, also developed a wide array of features and functionalities in projects. 👀
-          </p>
+          </motion.p>
 
           <div className="w-full flex py-3 justify-center md:justify-start">
             <ButtonWithIcon

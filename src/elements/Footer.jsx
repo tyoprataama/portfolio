@@ -1,14 +1,19 @@
+/* eslint-disable no-unused-vars */
 import profile from "@/assets/me.jpg";
+import { motion } from "framer-motion";
 import { IconMail, IconBrandLinkedin } from "@tabler/icons-react";
 
 export default function FooterSection() {
   return (
     <footer className="relative w-full min-h-screen bg-linear-to-b from-black to-[#431f0b] text-white py-2 px-6 flex flex-col justify-between md:px-20">
-      
-      {/* Bagian atas (headline + kontak) */}
       <div className="flex flex-col items-start justify-center flex-grow">
-        {/* Headline */}
-        <div className="text-left mb-16 max-w-4xl">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="text-left mb-16 max-w-4xl"
+        >
           <h2 className="text-4xl md:text-6xl font-extrabold leading-tight text-[#f8a07d] py-3">
             Suka kopi, mau ngopi bareng?
             <br />
@@ -16,11 +21,16 @@ export default function FooterSection() {
             <br />
             Ask something?
           </h2>
-        </div>
+        </motion.div>
 
-        {/* Contact section */}
-        <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10 w-full">
-          {/* Profile */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
+          viewport={{ once: true }}
+          className="flex flex-col md:flex-row items-center gap-6 md:gap-10 w-full"
+        >
+
           <div className="relative">
             <img
               src={profile}
@@ -30,7 +40,7 @@ export default function FooterSection() {
             <span className="absolute -bottom-1 -right-1 text-3xl">🔥</span>
           </div>
 
-          {/* Contact info */}
+
           <div className="flex flex-col text-left text-[#f5c1ad]">
             <p className="text-base md:text-lg mb-5 font-medium text-[#f99c78]">
               Contact me via
@@ -54,16 +64,23 @@ export default function FooterSection() {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
 
-      {/* Footer bawah */}
-      <div className="w-full text-left text-sm text-[#f99c78]/80 mt-10 py-2">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
+        viewport={{ once: true }}
+        className="w-full text-left text-sm text-[#f99c78]/80 mt-10 py-2"
+      >
         <p>
-          Made with {" "}<span className="text-[#f6ab8d]">Vite</span> & <span className="text-[#f6ab8d]">Love</span> by{" "}
+          Made with{" "}
+          <span className="text-[#f6ab8d]">Vite</span> &{" "}
+          <span className="text-[#f6ab8d]">Love</span> by{" "}
           <span className="text-[#f6ab8d] font-semibold">Tyo Putra</span> &copy; 2025
         </p>
-      </div>
+      </motion.div>
     </footer>
   );
 }
