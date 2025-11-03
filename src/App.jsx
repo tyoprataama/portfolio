@@ -3,6 +3,7 @@ import Experience from './elements/Experience.jsx'
 import Hero from './elements/Hero.jsx'
 import Nav from './elements/Nav.jsx'
 import Project from './elements/Project.jsx'
+import Writings from './elements/Writings'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Hero/>
       <Project />
       <Experience/>
+      <Writings />
     </>
   )
 }
